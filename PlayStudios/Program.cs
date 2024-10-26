@@ -10,6 +10,18 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<GameClubContext>(options =>
     options.UseSqlite(connectionString));
 
+// Add CORS services
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        builder =>
+        {
+            builder.AllowAnyOrigin() // Allows any origin
+                   .AllowAnyMethod() // Allows any HTTP method
+                   .AllowAnyHeader(); // Allows any header
+        });
+});
+
 builder.Services.AddScoped<IClubService, ClubService>();
 builder.Services.AddScoped<IEventService, EventService>();
 
@@ -40,5 +52,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 app.UseMiddleware<ExceptionMiddleware>();
+app.UseCors("AllowAllOrigins");
 
 app.Run();
