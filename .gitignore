@@ -1,0 +1,102 @@
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+Logs/
+
+# Visual Studio and Rider settings
+.vscode/
+.idea/
+*.sln.iml
+.vscode/*
+.vscode/settings.json
+
+# Rider
+.idea/
+.idea_modules/
+
+# MacOS files
+.DS_Store
+
+# Node modules (if using Node or frontend frameworks like Vue/React/Angular in your project)
+node_modules/
+
+# npm debug log
+npm-debug.log*
+
+# Azure Web App publish settings
+.publishxml
+
+# Publish Output
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Production.json
+appsettings.*.json
+# Optional: uncomment if using appsettings.json for sensitive information
+# appsettings.json 
+
+# Secrets (user secrets)
+secrets.json
+
+# Resharper files
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Packages
+*.nupkg
+*.snupkg
+packages/
+
+# NuGet packages
+**/packages/*
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# Entity Framework Migrations
+Migrations/*
+
+# Crash and error reports
+*.pidb
+crashlytics/
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# JetBrains Rider and ReSharper settings
+.idea/
+*.DotSettings.user
+
+# Additional folders to ignore if using Docker
+docker-compose*
+Dockerfile*
+
+# Swagger files
+swagger/
+swagger-output/
+
+# Uncomment if you want to exclude all .env files
+# .env
+
+# JetBrains Rider
+.idea/
+
+# Windows thumbnail cache files
+Thumbs.db
+
+# OS-generated files
+*.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+*.swp

@@ -1,0 +1,6 @@
+@PlayStudios_HostAddress = http://localhost:5111
+
+GET {{PlayStudios_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
