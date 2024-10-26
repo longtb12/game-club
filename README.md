@@ -8,7 +8,7 @@ Before you begin, make sure you have the following installed:
 - SQLite (optional, helpful for database inspection)
 
 ## Setting Up the Backend (ASP.NET Core)
-- Configure Database Connection
+- Configure Database ConnectionStrings
     ```sh
     {
       "ConnectionStrings": {
@@ -47,7 +47,9 @@ The frontend will be available at http://localhost:8080
 
 ## Testing the Application
 - Backend API Testing
+
     Use Postman or curl to test endpoints, such as POST /api/clubs, GET /api/clubs, etc.
     
 - Frontend Testing
+  
     Open a browser and navigate to http://localhost:8080. You should be able to create clubs and events through the Vue interface.
