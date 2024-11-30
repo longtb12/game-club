@@ -28,7 +28,7 @@ namespace PlayStudios.Services
         {
             // Check for duplicates
             if (_context.Clubs.Any(c => c.Name == club.Name))
-                throw new InvalidOperationException("A club with the same name already exists.");
+                throw new InvalidOperationException("A club with the same name already exists");
 
             var newClub = new GameClub()
             {
